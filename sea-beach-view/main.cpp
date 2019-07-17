@@ -20,10 +20,12 @@ GLfloat position = 0.0f ,position1 = 0.0f,sk1,sk2,sk3,sk4;
 GLfloat position2 = 0.0f,position_sea=-0.3f;
 GLfloat position3 = 0.0f;
 GLfloat speed = 0.02f;
-int hello=0;
+//int hello=0;
 
+///time change variable for transition scenes
 GLfloat timeChange=0.0f;
-///tanim_sea
+
+///sea variable
 
 GLfloat s = 0.0f;
 GLfloat m=0.0f;
@@ -37,6 +39,7 @@ GLfloat parameter=6;
 
 void soundPlayer(){
 
+    ///change directory name
 	PlaySound(TEXT("H:\\Computer Graphics\\seaBeach\\1.wav"),NULL,SND_ASYNC|SND_FILENAME);
 
 
@@ -1549,6 +1552,8 @@ void sea_beach()
 }
 
 ///sea_beach_done
+
+
 
 ///start clouds
 void clouds()
@@ -3337,25 +3342,6 @@ void display() {
 
     }
 
-//     if (timeChange>250)
-//    {
-//         glLoadIdentity();
-//         glPushMatrix();
-//        //resort();
-//        resortDisplay();
-//         glPopMatrix();
-//
-//    }
-//     if (timeChange==300)
-//    {
-//         //glLoadIdentity();
-//        //resort();
-//        exit(0);
-//
-//    }
-
-
-     //cout<<timeChange<<endl;
 
 
 
@@ -3364,7 +3350,7 @@ void display() {
      {
          timeChange=0;
      }
-     //hello=timeChange;
+
     timeChange++;
 
     cout<<timeChange<<endl;
@@ -3373,30 +3359,14 @@ void display() {
 
 
 int main(int argc, char** argv) {
-    //sndPlaySound("ocean.wav", SND_ASYNC);
-    soundPlayer();
-//     if (hello>=0)
-//    {
-//
-//    //soundPlayer();
-//    //rainPlayer();
-//    PlaySound(TEXT("H:\\Computer Graphics\\seaBeach\\ocean.wav"),NULL,SND_ASYNC|SND_FILENAME);
-//
-//    }
-//     else if (hello>=20)
-//    {
-//
-//    //rainPlayer();
-//    PlaySound(TEXT("H:\\Computer Graphics\\seaBeach\\rain.wav"),NULL,SND_ASYNC|SND_FILENAME);
-//
-//    }
 
-    cout<<hello<<endl;
+    soundPlayer();
+
    glutInit(&argc, argv);
-   //glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
+
    glutInitWindowSize(1600, 900);
    glutInitWindowPosition(50, 50);
-   glutCreateWindow("Basic Animation");
+   glutCreateWindow("Sea Beach");
 
    glutDisplayFunc(display);
     //timeChange=150;
