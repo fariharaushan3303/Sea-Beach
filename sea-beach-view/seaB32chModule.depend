@@ -8,8 +8,9 @@
 	<GL/glut.h>
 	<math.h>
 
-976645372 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+1527258586 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
 	<windows.h>
+	<stdlib.h>
 	<GL/gl.h>
 	<GL/glu.h>
 
@@ -227,6 +228,17 @@
 	<_mingw.h>
 
 1545017604 source:h:\computer graphics\seabeach\main.cpp
+	<iostream>
+	<cstdio>
+	<windows.h>
+	<bits/stdc++.h>
+	<GL/gl.h>
+	<GL/glut.h>
+	<math.h>
+	<windows.h>
+	<mmsystem.h>
+
+1563386813 source:c:\users\h311812z3r\all academic projects\computer graphics\sea-beach\sea-beach-view\main.cpp
 	<iostream>
 	<cstdio>
 	<windows.h>

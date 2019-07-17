@@ -3216,7 +3216,7 @@ void display() {
       // return;
 
     }
-    if (timeChange>40)
+    if (timeChange>60)
     {
         glLoadIdentity();
         glPushMatrix();
@@ -3323,7 +3323,7 @@ void display() {
 
     }
 
-    if (timeChange>90)
+    if (timeChange>120)
     {
          glLoadIdentity();
          glPushMatrix();
@@ -3332,7 +3332,7 @@ void display() {
 
     }
 
-    if (timeChange>140)
+    if (timeChange>180)
     {
          glLoadIdentity();
          glPushMatrix();
@@ -3346,7 +3346,7 @@ void display() {
 
 
 
-     if (timeChange>200)
+     if (timeChange>240)
      {
          timeChange=0;
      }
